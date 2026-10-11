@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in 3DPlayer doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. If you'd rather not post your report publicly, email it to 3dplayersupport@gmail.com instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: For example NVIDIA SHIELD TV Pro, onn 4K Pro, Homatics Box R 4K Plus.
+    validations:
+      required: true
+  - type: input
+    id: display
+    attributes:
+      label: TV or projector, and receiver or soundbar
+      description: For example Sony VPL projector, Sonos Arc.
+  - type: input
+    id: source
+    attributes:
+      label: App you played from
+      description: For example Jellyfin.
+  - type: textarea
+    id: report
+    attributes:
+      label: Bug report file
+      description: |
+        In 3DPlayer, open Settings > Send a bug report, open the address it shows on a phone or computer, and drag the downloaded .zip here.
+        Web addresses, file paths and access keys are removed from it before it's saved.
